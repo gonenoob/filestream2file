@@ -8,10 +8,10 @@
 		"build": "webpack --env=production"
   },
   "keywords": [
-    "'filestream",
+    "filestream",
     "ajax",
     "download",
-    "file'"
+    "file"
   ],
   "author": "junda.mao(https://github.com/gonenoob)",
   "license": "ISC",
