@@ -1,6 +1,6 @@
 {
   "name": "filestream2file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "'filestream 2 file download'",
   "main": "index.js",
   "scripts": {

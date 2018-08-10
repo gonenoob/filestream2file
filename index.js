@@ -27,9 +27,17 @@ export default (url, fileName='', cb) => {
 						}
 					} else {
 						throw Error('请使用chrome等高级浏览器')
+						result = {
+							success: false,
+							message: '浏览器版本过低'
+						}
 					}
 				} catch (e) {
 					console.log(e + '')
+					result = {
+						success: false,
+						message: e.message
+					}
 				}
 			}
 			
@@ -38,6 +46,8 @@ export default (url, fileName='', cb) => {
 	}
 
 	xhr.send()
+
+	return xhr
 }
 
 async function readJsonBlob(blob) {
